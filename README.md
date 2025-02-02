@@ -69,7 +69,7 @@ mutation CreateBook {
 }
 ```
 
-### Type (Object)
+### Types (Object)
 ```schema.graphqls
 type Book {
   id: ID
@@ -85,6 +85,16 @@ type Author {
 }
 ```
 
+### Controller Class
 In the controller, the name of the method should match the name of the endpoint in the Query type.
 
-@Query annotation in the controller maps the method name to the type in the graphql schema.
+@QueryMapping  annotation in the controller maps the method name to the type in the graphql schema.
+
+### application.properties
+To enable GraphQL in Spring Boot:
+
+```application.properties
+spring.graphql.graphiql.enabled=true
+```
+
+To use GraphQL from the browser: http://localhost:8080/graphql/graphiql
