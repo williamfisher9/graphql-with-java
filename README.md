@@ -23,10 +23,10 @@ Create a file called schema.graphqls under resources/graphql
 A file containing the kind of objects that you can fetch from your service including its fields.
 
 ### The Query Type
-```
-// The Query type is a special object type that defines all of the top-level
-// entry points for queries that clients execute against your server.
-// Each field of the Query type defines the name and return type of a different entry point.
+The Query type is a special object type that defines all of the top-level entry points for queries that clients execute against your server.
+Each field of the Query type defines the name and return type of a different entry point.
+
+```schema.graphqls
 type Query {
   bookById: String
   books: [Book]
@@ -55,7 +55,7 @@ query GetBooks {
 
 ### The Mutation Type
 The Query type defines entry points for read operations, the Mutation type defines entry points for write operations.
-```
+```schema.graphqls
 type Mutation {
   addBook(title: String, author: String): Book
 }
@@ -71,7 +71,7 @@ mutation CreateBook {
 ```
 
 ###
-```
+```schema.graphqls
 type Book {
   id: ID
   name: String
