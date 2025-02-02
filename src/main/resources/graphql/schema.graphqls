@@ -1,0 +1,20 @@
+# Each record in the query represents an endpoint in the controller
+type Query {
+  books: [Book]
+  authors: [Author]
+  bookById(id: ID): Book
+  authorById(id: ID): Author
+}
+
+type Book {
+  id: ID
+  name: String
+  pageCount: Int
+  author: Author
+}
+
+type Author {
+  id: ID
+  firstName: String
+  lastName: String
+}
