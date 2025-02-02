@@ -24,6 +24,7 @@ A file containing the kind of objects that you can fetch from your service inclu
 
 ### The Query Type
 The Query type is a special object type that defines all of the top-level entry points for queries that clients execute against your server.
+
 Each field of the Query type defines the name and return type of a different entry point.
 
 ```schema.graphqls
@@ -33,8 +34,6 @@ type Query {
   authors: [Author]
 }
 
-// Based on our example schema so far, a client could execute the following query,
-// which requests both a list of all book titles and a list of all author names:
 query GetBooksAndAuthors {
   books {
     title
@@ -70,7 +69,7 @@ mutation CreateBook {
 }
 ```
 
-###
+### Type (Object)
 ```schema.graphqls
 type Book {
   id: ID
