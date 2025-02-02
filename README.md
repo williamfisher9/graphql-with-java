@@ -100,7 +100,7 @@ spring.graphql.graphiql.enabled=true
 To use GraphQL from the browser: http://localhost:8080/graphiql
 
 In Graphiql youc an use the queries defined in the Query:
-```graphicl
+```graphicl.graphicl
   {
     books {
       name
@@ -117,3 +117,21 @@ In Graphiql youc an use the queries defined in the Query:
   }
 ```
 
+@SchemaMapping is used to get an object from another object that is mapped to it.
+
+You can also send multiple queries in the same request as in the above example.
+
+### Postman
+To test the endpoints from Postman:
+- Start postman
+- File -> New -> GraphQL
+- Send the request to the path specified in application.properties which defaults to /graphql
+  ```
+    http://localhost:8080/graphql
+  ```
+- In application.properties if spring.graphql.path is set, then use the new path:
+  ```
+    spring.graphql.path=/api/graphql
+  
+    http://localhost:8080/api/graphql
+  ```
