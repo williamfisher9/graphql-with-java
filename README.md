@@ -98,3 +98,21 @@ spring.graphql.graphiql.enabled=true
 ```
 
 To use GraphQL from the browser: http://localhost:8080/graphiql
+
+In Graphiql youc an use the queries defined in the Query:
+```
+  {
+    books {
+      name
+      pageCount
+      id
+    }
+  }
+
+  {
+    bookById(id: "book-1") {
+        id
+        name
+      }
+  }
+```
