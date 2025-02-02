@@ -84,3 +84,7 @@ type Author {
   lastName: String
 }
 ```
+
+In the controller, the name of the method should match the name of the endpoint in the Query type.
+
+@Query annotation in the controller maps the method name to the type in the graphql schema.
