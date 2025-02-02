@@ -4,15 +4,15 @@
 - Developed by Meta.
 - Used for API data fetching.
 - Efficient data fetching.
-- Strogly typed schema.
+- Strongly typed schema.
 - No need for API versioning api/v1/customers, api/v2/customers.
 - In graphQL, the client defines the structure while in RESTm the server defines the structure.
 - Avoids over-fetching and under-fetching.
 - GraphQL uses a single endpoint, while REST provides multiple endpoints (customers, users, transactions).
-- GraphQL doe not need versioning while it's needed in REST.
+- GraphQL does not need versioning while it's needed in REST.
 - Minimal payload (only requested data). REST provides fixed payload and may include unnecessary data.
 - Highly flexible.
-- Efficient in reducitng network requests.
+- Efficient in reducing network requests.
 - Complex error handling compared to REST.
 
 ## Setup
@@ -24,9 +24,9 @@ Create a file called schema.graphqls under resources/graphql
 A file containing the kind of objects that you can fetch from your service including its fields.
 
 ### The Query Type
-The Query type is a special object type that defines all of the top-level entry points for queries that clients execute against your server.
+The Query type is a special object type that defines all the top-level entry points for queries that clients execute against your server.
 
-Each field of the Query type defines the name and return type of a different entry point.
+Each field of the Query type defines the name and the return type of different entry points.
 
 ```schema.graphqls
 type Query {
@@ -100,7 +100,7 @@ spring.graphql.graphiql.enabled=true
 
 To use GraphQL from the browser: http://localhost:8080/graphiql
 
-In Graphiql youc an use the queries defined in the Query:
+In Graphiql you can use the queries defined in the Query:
 ```graphicl.graphicl
   {
     books {
