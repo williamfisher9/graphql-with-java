@@ -100,7 +100,7 @@ spring.graphql.graphiql.enabled=true
 To use GraphQL from the browser: http://localhost:8080/graphiql
 
 In Graphiql youc an use the queries defined in the Query:
-```
+```graphicl
   {
     books {
       name
@@ -116,3 +116,4 @@ In Graphiql youc an use the queries defined in the Query:
       }
   }
 ```
+
