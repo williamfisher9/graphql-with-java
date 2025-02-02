@@ -137,11 +137,11 @@ To test the endpoints from Postman:
     http://localhost:8080/api/graphql
   ```
 
-  - In React, you can use axios to send POST request to qraphql endpoint with request body as JSON containing:
-    ```dtd
-    {
-        operationName: "fetchAllBuildingInfo",
-        query: `query fetchAllBuildingInfo ${AllBuildingQuery}`,
-        variables: {}
-    }
-    ```
+- In React, you can use axios to send POST request to qraphql endpoint with request body as JSON containing:
+  ```dtd
+  {
+      operationName: "fetchAllBuildingInfo",
+      query: `query fetchAllBuildingInfo ${AllBuildingQuery}`,
+      variables: {}
+  }
+  ```
