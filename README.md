@@ -97,4 +97,4 @@ To enable GraphQL in Spring Boot:
 spring.graphql.graphiql.enabled=true
 ```
 
-To use GraphQL from the browser: http://localhost:8080/graphql/graphiql
+To use GraphQL from the browser: http://localhost:8080/graphiql
